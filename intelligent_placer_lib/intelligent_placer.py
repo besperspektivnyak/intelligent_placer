@@ -1,5 +1,5 @@
 from intelligent_placer_lib.objects_detection import read_image, preprocess_image, find_contours, find_min_rect, find_approx_polygon
-from intelligent_placer_lib.objects_arrangemant import is_objects_placed
+from intelligent_placer_lib.objects_arrangement import is_objects_placed
 
 
 def check_image(path: str) -> bool:
