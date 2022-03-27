@@ -5,12 +5,16 @@
 Имеется фотография с нарисованным многоугольником и каким-то количеством объектов. Требуется определить поместятся ли все эти предметы одновременно в имеющуюся фигуру.
 “Intelligent Placer” оформлен в виде python-библиотеки intelligent_placer_lib, которая поставляется каталогом intelligent_placer_lib с файлом intelligent_placer.py, содержащим функцию - точку входа:
 
-`def check_image(<path_to_png_jpg_image_on_local_computer>[, <poligon_coordinates>])`
+```python
+def check_image(<path_to_png_jpg_image_on_local_computer>[, <poligon_coordinates>])
+```
 которая возвращает список индексов вмещаемых предметов (предметы номеруются с 0 сверху вниз относительно фотографии).
 
-`from intelligent_placer_lib import intelligent_placer
+```python
+from intelligent_placer_lib import intelligent_placer
 def test_intelligent_placer():
-	assert intelligent_placer.check_image(“/path/to/my/image.png”)`
+	assert intelligent_placer.check_image(“/path/to/my/image.png”)
+```
 Также требуется воспроизводимый intelligent_placer.ipynb, содержащий репрезентативные примеры работы алгоритма с оценками качества его работы и их визуализацией.
 
 ### Требования к входным данным
